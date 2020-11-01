@@ -2,49 +2,142 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <style>
+  #tt {
+    font-size: 10px;
+  }
+  .related_product {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  ul {
+  list-style-type: none;
+  margin: 15;
+  padding: 10;
+  overflow: hidden;
+  }
+
+  li {
+  float: left;
+  }
+
+  .logo_n_search {
+    text-align:center;
+  }
+  .row {
+    display: flex;
+  }
+  .column {
+    flex: 50%;
+  }
+  </style>
   <title>SAVER</title>
 </head>
 <body>
 
+<!--최상단 팝업 영역 -->
 <div class="popup">
 </div>
 
-<div class="toplink">
-  <a href="https://naver.com/" target="_blank">세이버를 시작페이지로<img alt="네이버아이콘" src="aa.png" width="20" height="20"></a>
-|
-  <a href="https://jr.naver.com/" target="_blank"><img alt="쥬니버아이콘" src="bb.png" width="40" height="20"></a>
-|
-  <a href="https://happybean.naver.com/" target="_blank"><img alt="해피빈아이콘" src="cc.png" width="40" height="20"></a>
+<!--우상단 연관서비스 링크 -->
+<div class="related_product">
+  <ul>
+    <li><a href="https://naver.com/" target="_blank" id="tt">세이버를 시작페이지로<img alt="네이버아이콘" src="aa.png" width="20" height="10"></a></li>
+    <li>|</li>
+    <li><a href="https://jr.naver.com/" target="_blank"><img alt="쥬니버아이콘" src="bb.png" width="40" height="20"></a></li>
+    <li>|</li>
+    <li><a href="https://happybean.naver.com/" target="_blank"><img alt="해피빈아이콘" src="cc.png" width="40" height="20"></a></li>
+  </ul>
 </div>
 
+<!--검색화면 -->
 <div class="logo_n_search">
   <a href="https://naver.com"><img alt="네이버아이콘" src="dd.png" width="210" height="70" ></a>
-  <input type="text" size="50">
+  <input type="text" style="font-size: 36pt;">
   <a href="javascript:alert('Not yet!!')"><img alt="검색버튼" src="ee.png" width="50" height="50"></a>
 </div>
 
+<!--GNB 및 실시간 급상승 검색어 영역 -->
 <div class="gnb_n_realsearch">
+  <ul>
+    <li><a href="mail.naver.com">메일&nbsp;</a></li>
+    <li><a href="cafe.naver.com">카페&nbsp;</a></li>
+    <li><a href="blog.naver.com">블로그&nbsp;</a></li>
+    <li><a href="kin.naver.com">지식iN&nbsp;</a></li>
+    <li><a href="pay.naver.com">Pay&nbsp;</a></li>
+    <li><a href="tv.naver.com">TV&nbsp;</a></li>
+    <li><a href="dict.naver.com">사전&nbsp;</a></li>
+    <li><a href="news.naver.com">뉴스&nbsp;</a></li>
+    <li><a href="etc.naver.com">기타&nbsp;</a></li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+    <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+    <li><a href="javascript:alert('Not yet!!')">실급검 영역</a></li>
+  </ul>
 </div>
 
-<div class="">
+<!--2열 구성의 시작 -->
+<div class="row">
+<!-- 1열 시작-->
+  <div class="column">
+
+<!-- 1열: 광고 배너1 -->
+    <div class="adbanner1">
+      <img src="jj.png" alt="광고배너1" width="800" height="200">
+    </div>
+
+<!-- 1열: 롤링뉴스 + 링크 -->
+    <div class="news_n_link">
+      <img src="ll.png" width="300" height="40">
+      <a href="https://news.naver.com">세이버뉴스</a>
+      <a href="https://entertain.naver.com">연예</a>
+      <a href="https://sports.naver.com">스포츠</a>
+      <a href="https://news.naver.com">경제</a>
+    </div>
+
+<!-- 1열: 뉴스캐스트 -->
+    <div class="news_section">
+      <a href="news.naver.com" target="_blank">뉴스스탠드 / 구독한 언론사 / 전체언론사</a>
+      <button onclick="javascript:alert('아직 안배움')"><img src="gg.png" width="30" height="30"></button>
+      <button onclick="javascript:alert('아직 안배움')"><img src="hh.png" width="30" height="30"></button>
+      <a href="https://newsstand.naver.com/config.html" target="_blank"><img src="ii.png" width="30" height="30"></a>
+      <table style="width:100%">
+        <tr>
+          <td><img src="mm.png" width="800" height="100"></td>
+        </tr>
+        <tr>
+          <td><img src="nn.png" width="800" height="100"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+<!-- 2열 시작-->
+  <div class="column">
+<!-- 2열: 로그인 -->
+    <div class="sign_in">
+      <img src="kk.png" alt="로그인이미지" width="400" height="200">
+    </div>
+
+<!-- 2열: 롤링보드 -->
+    <div class="rolling_board">
+      <img src="ff.png" alt="롤링보드" width="400" height="50">
+    </div>
+
+<!-- 2열: 광고배너2 -->
+        <div class="adbanner2">
+          <img src="oo.png" width="400" height="250">
+        </div>
+
+
+  </div>
 </div>
 
-<div class="">
-</div>
 
-<div class="">
-</div>
-
-
-<div class="">
-</div>
-<div class="">
-</div>
-<div class="">
-</div>
-<div class="">
-</div>
 
 
 
